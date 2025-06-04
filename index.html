@@ -1,0 +1,119 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Registration - ShopEase</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-container img {
+      width: 80px;
+      height: auto;
+    }
+
+    .logo-container h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+      color: #007BFF;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #343a40;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .note {
+      font-size: 12px;
+      color: gray;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Company Name & Logo -->
+  <div class="logo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Company Logo">
+    <h1>ShopEase</h1>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="form-container">
+    <h2>Customer Registration</h2>
+    <form action="#" method="post">
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fname" placeholder="John Doe" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+1 555-1234" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="123 Main St, City, Country">
+
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
